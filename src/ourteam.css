@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+
+}
+.header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color:#ccc;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+.copyright span {
+    padding-left: 45%;
+}
+
+.header p {
+    color: #ccc;
+    text-decoration: None;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header .name {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header .lab {
+    font-weight: 200;
+  }
+
+.header .nav-links {
+    display: flex;
+    align-items: center;
+}
+.header .nav-links  a {
+    color: grey;
+    margin-left: 20px;
+    text-decoration: None;
+    font-weight: bold;
+    text-align: right;
+    font-size: 13px;
+
+}
+
+.header .nav-links .selected {
+    color: white;
+}
+
+.nav-links  a:hover {
+    color: white;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    min-height: calc(100vh - 200px);
+    /* padding: 20px; */
+    color: white;
+    margin-bottom: 100px;
+  }
+  
+  body .footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* border: 1px solid yellow; */
+  }
+
+  .footer-class iframe {
+    width:60%; 
+    height:100%;
+    margin-top: 0px;
+  }
+  .content h1 {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 0px;
+  }
+  
+  .content h2 {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+.content p {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    width:50%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-column-gap: 150px; /* Adjust gap between grid items */
+    grid-row-gap: 50px; 
+    justify-content: center;
+    margin-top:20px;
+  }
+
+.member {
+    align-items: center;
+    display: flex; /* Display the elements as a flex container */
+    flex-direction: column; /* Arrange the elements in a row */
+}  
+
+.circular-image {
+    display: block;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Set the same height as the width for a circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-bottom: 5px;
+  }
+
+
+.member .member-name {
+    font-weight: bold; /* Make the name bold */
+    font-size: 20px; /* Adjust the font size as needed */
+    color:white;
+    white-space: nowrap;
+    width:200px;
+  }
+.member .member-position {
+font-weight: bold; /* Make the name bold */
+font-size: 12px; /* Adjust the font size as needed */
+color:#ccc;
+white-space: nowrap;
+display: inline-block;
+margin: 0px;
+width:200px;
+}
+
+.member > p {
+margin-top: 10px; /* Add spacing between the image and the name */
+margin-bottom: 5px;
+}
+.member .member-social-media {
+    align-items: center;
+    display: flex; /* Display the elements as a flex container */
+    flex-direction: row; /* Arrange the elements in a row */
+    gap: 10px; 
+}  
+.member .member-social-media img {
+    display: block;
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Set the same height as the width for a circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-top:20px;
+    /* margin: 5px; */
+}
+  
+  
+  
+  
+  
+  
+  

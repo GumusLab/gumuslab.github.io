@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.footer {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer-content {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 100px; /* Add gap between items */
+
+    /* align-items: flex-start; */
+    /* padding: 20px; */
+  }
+  
+  .footer .footer-content > * {
+    flex: 1;
+    /* Add optional styling like padding or margin */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: left;
+     /* Add padding to create space around content */
+    /* background-color: #333; */
+    color: whitesmoke;
+  }
+
+.footer .footer-content .footer-address p {
+    color: #D3D3D3;
+}
+
+.footer .footer-content .footer-address .lab-name .name {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.footer .footer-content .footer-address .lab-name .lab { 
+    font-weight: 200;
+    color:  #ccc;
+}
+
+.footer .footer-content .footer-address p span {
+    color: grey;
+}
+
+  .footer .footer-content .footer-address p a {
+    color: #D3D3D3; /* Off-white color */
+    text-decoration: none; /* Remove underline */  
+    line-height: 1.5;
+}
+
+.footer .footer-content .footer-address p a:visited {
+    color: #D3D3D3; /* Off-white color */
+    }
+    
+  .footer .footer-content .footer-links .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:5px;
+  }
+
+  .footer .footer-content .footer-links .nav-links a {
+    color: #D3D3D3; /* Off-white color */
+    text-decoration: none; /* Remove underline */
+  }
+  .footer .footer-content .footer-links .nav-links a:visited {
+    color: #D3D3D3; /* Off-white color */
+  }
+
+  .footer .footer-content .footer-socialmedia .social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:5px;
+  }
+  .footer .footer-content .footer-socialmedia .social-media img {
+    display: block;
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Set the same height as the width for a circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-bottom: 5px;
+  }
+  /* .footer .footer-content .footer-address p {
+    color: #FAF9F6;
+  } */
