@@ -70,7 +70,7 @@ fetch(apiURL, { headers })
 
         if(paperDoi.length > 0){
             const paperDoiValue = paperDoi[0]["external-id-value"];
-            const corsAnywhereUrl = "http://cors-anywhere.herokuapp.com/";
+            const corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
             const crossrefApiUrl = `https://api.crossref.org/works/${paperDoiValue}`;
             const fullCrossrefApiUrl = `${corsAnywhereUrl}${crossrefApiUrl}`;
             return fetch(fullCrossrefApiUrl)
