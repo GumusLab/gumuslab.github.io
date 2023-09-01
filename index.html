@@ -74,7 +74,7 @@
             width: 100vw;
             height: 100vh; 
         }
-        .catchline {
+        .background-image .catchline {
             position: absolute;
             top: 50%; /* Position the text vertically in the middle */
             left: 50%; /* Position the text horizontally in the center */
@@ -84,6 +84,15 @@
             font-size: 50px;
             text-align: center;
             width: 50%; /* Set the width of the text */
+            opacity: 0.1; /* Start with 0 opacity */
+            transition: opacity 4s ease-in-out; /* Apply transition to opacity property */
+        }
+    
+        .background-image .catchline.active {
+            opacity: 1; /* When the class "active" is added, transition to full opacity */
+            /* transition: opacity 4s ease-in-out; */
+
+            /* color: white; */
         }
         </style>
 </head>
@@ -94,16 +103,23 @@
             <a href="index.html" class="selected">HOME</a>
             <a href="./src/publications.html">PUBLICATIONS</a>
             <a href="./src/software.html">SOFTWARE</a>
-            <a href="./src/ourteam.html">OUR TEAM</a>
+            <a href="./src/ourteam.html">TEAM</a>
           </div>
       </div>
       <div class="background-image">
         <div class="catchline">
             <!-- UNLOCKING GENETIC MYSTERIES THROUGH VISUAL NETWORKS -->
-            UNLOCKING GENETIC MYSTERIES THROUGH COMPUTATIONAL GENOMICS AND INTERACTIVE VISUALIZATIONS
+            <!-- UNLOCKING GENETIC MYSTERIES THROUGH COMPUTATIONAL GENOMICS AND INTERACTIVE VISUALIZATIONS -->
+            RESEARCH IN COMPUTATIONAL CANCER GENOMICS
 
           </div>      
       </div>
-     
+      <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const catchline = document.querySelector(".catchline");
+            console.log('%%%%%%% catchline is %%%%%%%',catchline)
+            catchline.classList.add("active");
+        });
+        </script>
 </body>
 </html>
