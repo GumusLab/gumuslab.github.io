@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color:#ccc;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+.copyright span {
+    padding-left: 45%;
+}
+
+.header p {
+    color: #ccc;
+    text-decoration: None;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header .name {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header .lab {
+    font-weight: 200;
+}
+
+.header .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-links  a {
+    color: grey;
+    margin-left: 20px;
+    text-decoration: None;
+    font-weight: bold;
+    text-align: right;
+    font-size: 13px;
+
+}
+
+.header .nav-links .selected {
+    color: white;
+}
+
+
+.nav-links  a:hover {
+    color: white;
+}
+
+.footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+    /* border: 1px solid yellow; */
+  }
+
+.footer-class iframe {
+    width:60%; 
+    height:100%;
+  }
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: white; */
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+.content .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 2%;
+
+}
+
+.content .rights > h1 {
+    margin-bottom: 0px;
+}
+
+.content .rights .rights_heading1 {
+    font-style: italic;
+    /* font-weight: lighter; */
+    margin-top: 10px;
+}
+
+.content .rights .rights_heading2 {
+    /* font-weight: lighter; */
+    margin: 0px;
+}
+/* .content .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+
+} */
+
+.content .rights .rightsImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-column-gap: 50px; /* Adjust gap between grid items */
+    grid-row-gap: 10px; 
+    justify-content: center;
+    margin-top:20px;
+  }
+
+.content .rights .rightsImages .member {
+    align-items: center;
+    display: flex; /* Display the elements as a flex container */
+    flex-direction: column; /* Arrange the elements in a row */
+    grid-row-gap: 0px; 
+}  
+
+.content .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-top: 50px;
+}
+
+.content .mission h1{
+   margin-bottom: 5px;
+}
+
+.content .mission p {
+    text-align: center;
+    margin-top: 15px;
+    width:50%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.seprate-member {
+    align-items: center;
+    display: flex; /* Display the elements as a flex container */
+    flex-direction: column; /* Arrange the elements in a row */
+    grid-row-gap: 0px; 
+    margin-top: 10px;
+} 
+
+.circular-image {
+    /* display: block; */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; 
+    /* object-fit: cover; */
+    object-fit: contain; 
+    margin-bottom: 5px;
+  }
+
+.member-text-1 {
+    font-size: 17px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.member-text-2 {
+    font-size: 15px;
+    margin: 0px;
+
+}
+
+

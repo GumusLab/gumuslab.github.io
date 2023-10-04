@@ -94,6 +94,72 @@
 
             /* color: white; */
         }
+
+        .content .missionStatement {
+          background-color: white;
+          color:black;
+          display: flex;
+          flex-direction: row;
+          /* align-items: center; */
+          gap: 40px;
+        }
+
+        .content .missionStatement h1 {
+          width:100%;
+          text-align: right;
+          margin-left: 40px;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          font-size: 40px;
+        }
+
+        .content .missionStatement p {
+          text-align: justify;
+          margin-bottom: 40px; 
+          line-height: 1.5;
+          font-size: 20px;
+          margin-top: 40px;
+          margin-right: 40px;
+
+        }
+
+        .copyright {
+          color:#ccc;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          border-top: 1px solid grey;
+        }
+
+        .copyright span {
+          padding-left: 45%;
+        }
+
+        .footer-class {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
+          margin-top: 50px;
+          /* border: 1px solid yellow; */
+        }
+
+      .footer-class iframe {
+          width:60%; 
+          height:100%;
+        }
+
+      .background-image .drop-down {
+        position: relative;
+        top: 88%;
+        left: 50%;
+      }
+      .background-image .drop-down .drop-down-img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+
         </style>
 </head>
 <body>
@@ -101,25 +167,69 @@
         <p><span class="name">GÜMÜŞ</span><span class="lab">LAB</span></p>
         <div class="nav-links">
             <a href="index.html" class="selected">HOME</a>
-            <a href="./src/publications.html">PUBLICATIONS</a>
-            <a href="./src/software.html">SOFTWARE</a>
             <a href="./src/ourteam.html">TEAM</a>
+            <a href="./src/software.html">SOFTWARE</a>
+            <a href="./src/publications.html">PUBLICATIONS</a>
+            <a href="./src/mission.html" >MISSION STATEMENT</a>
           </div>
       </div>
-      <div class="background-image">
-        <div class="catchline">
-            <!-- UNLOCKING GENETIC MYSTERIES THROUGH VISUAL NETWORKS -->
-            <!-- UNLOCKING GENETIC MYSTERIES THROUGH COMPUTATIONAL GENOMICS AND INTERACTIVE VISUALIZATIONS -->
-            RESEARCH IN COMPUTATIONAL CANCER GENOMICS
+      <div class="content">
+        <div class="background-image">
+          <div class="catchline">
+              <!-- UNLOCKING GENETIC MYSTERIES THROUGH VISUAL NETWORKS -->
+              <!-- UNLOCKING GENETIC MYSTERIES THROUGH COMPUTATIONAL GENOMICS AND INTERACTIVE VISUALIZATIONS -->
+              RESEARCH IN COMPUTATIONAL CANCER GENOMICS
 
-          </div>      
+            </div>
+            <div class="drop-down">
+              <img class="drop-down-img" src="./static/down.png" id="drop-down-button">
+            </div>      
+        </div>
+        <div class="missionStatement">
+          <h1> Research Summary</h1>
+          <p>
+            We are a computational genomics lab where we develop and apply methods and 
+            tools to identify genetic drivers of cancer risk, progression and therapy 
+            response. To understand such genetic factors, we need to find new routes 
+            to analyze, integrate and explore diverse, massive and heterogeneous 
+            genomics datasets. Towards this goal, we utilize genomic epidemiology, 
+            computational genomics, data visualization, machine learning, and 
+            ultrafast computing. We have been active in the area of computational 
+            cancer genomics, specifically in the analysis of massive sequencing data 
+            in genomic epidemiology studies in the past few years. Our appointments at 
+            the Department of Genetics and Genomic Sciences, the NCI-designed Tisch 
+            Cancer Center and the Precision Immunology Institute at the Icahn School 
+            of Medicine foster an ideal environment to pursue our research studies.
+          </p>
+        </div>
       </div>
+      <div class="footer-class">
+        <iframe src="./src/footer.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="copyright">
+        <span>© Zeynep H Gümüş Lab 2023</span>
+    </div>
       <script>
         window.addEventListener("DOMContentLoaded", function() {
             const catchline = document.querySelector(".catchline");
             console.log('%%%%%%% catchline is %%%%%%%',catchline)
             catchline.classList.add("active");
         });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        const dropDownButton = document.getElementById("drop-down-button");
+
+        dropDownButton.addEventListener("click", function () {
+            // Calculate the target position for scrolling
+            const targetPosition = window.innerHeight;
+
+            // Smooth scroll behavior
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+            });
+        });
+    });
         </script>
 </body>
 </html>
