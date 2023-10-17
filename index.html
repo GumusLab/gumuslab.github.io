@@ -123,6 +123,16 @@
 
         }
 
+        .content .wordCloud {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .content .wordCloud .wordCloudImg {
+         padding: 0px;
+        }
+
         .copyright {
           color:#ccc;
           height: 80px;
@@ -202,6 +212,9 @@
             of Medicine foster an ideal environment to pursue our research studies.
           </p>
         </div>
+      <div class="wordCloud">
+        <img class="wordCloudImg" src="./static/wordcloud.png" id="wordCloudImg">
+      </div>
       </div>
       <div class="footer-class">
         <iframe src="./src/footer.html" frameborder="0" scrolling="no"></iframe>
@@ -210,9 +223,9 @@
         <span>© Zeynep H Gümüş Lab 2023</span>
     </div>
       <script>
+  
         window.addEventListener("DOMContentLoaded", function() {
             const catchline = document.querySelector(".catchline");
-            console.log('%%%%%%% catchline is %%%%%%%',catchline)
             catchline.classList.add("active");
         });
         
