@@ -99,7 +99,9 @@ body {
     align-items: center;
     text-align: center;
     background-color: white;
-    border-radius: 2%;
+    width: 240px;
+    height: 240px;
+    border-radius: 20%;
 
 }
 
